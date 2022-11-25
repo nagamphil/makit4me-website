@@ -1,14 +1,57 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex justify-content-between align-items-center">
+
+<div class="logo">
+  <h1><a href="/">Makit4Me</a></h1>
+</div>
+
+<nav id="navbar" class="navbar">
+  <ul>
+    <li><a class="active " href="/">Home</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#" disabled>Contact Us</a></li>
+  </ul>
+  <i class="bi bi-list mobile-nav-toggle"></i>
+</nav><!-- .navbar -->
+
+</div>
     </header>
+    <section class="hero-section" id="hero">
+
+      <div class="wave">
+
+        <svg width="100%" height="355px" viewBox="0 0 1920 355" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Apple-TV" transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
+              <path d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,757 L1017.15166,757 L0,757 L0,439.134243 Z" id="Path"></path>
+            </g>
+          </g>
+        </svg>
+
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 hero-text-image">
+            <div class="row">
+              <div class="col-lg-8 text-center text-lg-start">
+                <h1 data-aos="fade-right">Self Service App</h1>
+                <p class="mb-5" data-aos="fade-right" data-aos-delay="100">An App for all ages.</p>
+                <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="features.html" class="btn btn-outline-white">Learn More</a></p>
+              </div>
+              <div class="col-lg-4 iphone-wrap">
+                <img src="assets/img/phone_1.png" alt="Image" class="phone-1" data-aos="fade-right">
+                <img src="assets/img/phone_2.png" alt="Image" class="phone-2" data-aos="fade-right" data-aos-delay="200">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Hero -->
     <slot/>
   </div>
 </template>
@@ -22,29 +65,4 @@ query {
 </static-query>
 
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>
