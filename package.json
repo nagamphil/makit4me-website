@@ -7,7 +7,9 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.21.2",
     "gridsome": "^0.7.0",
     "jquery": "^3.6.1",
     "popper.js": "^1.16.1"

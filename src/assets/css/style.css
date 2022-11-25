@@ -121,6 +121,10 @@ section {
   padding: 15px 30px !important;
 }
 
+.btn-signup {
+  padding: 5px !important;
+}
+
 .btn.btn-outline-white {
   border: 2px solid #fff;
   background: none;
