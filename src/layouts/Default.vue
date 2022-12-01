@@ -53,6 +53,9 @@
 
     </section><!-- End Hero -->
     <slot/>
+    <FeatureOne />
+    <DownloadApp />
+    <Footer />
   </div>
 </template>
 
@@ -66,3 +69,16 @@ query {
 
 <style>
 </style>
+<script>
+import Footer from '~/components/Footer.vue'
+import DownloadApp from '../components/DownloadApp.vue';
+import FeatureOne from '../components/FeatureOne.vue';
+
+export default {
+  components: {
+    Footer,
+    DownloadApp,
+    FeatureOne
+  }
+}
+</script>

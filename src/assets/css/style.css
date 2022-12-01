@@ -118,7 +118,8 @@ section {
 /* Default btn sre-tyling */
 .btn {
   border: none;
-  padding: 15px 30px !important;
+  /* padding: 15px 30px !important; */
+  margin: 5px;
 }
 
 .btn-signup {
