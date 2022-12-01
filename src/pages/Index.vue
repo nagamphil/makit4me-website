@@ -1,9 +1,11 @@
 <template>
   <Layout>
+    <ClientOnly></ClientOnly>
   </Layout>
 </template>
 
 <script>
+
 export default {
   metaInfo: {
     mounted() {
